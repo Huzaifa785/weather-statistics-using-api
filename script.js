@@ -6,7 +6,7 @@ let getWeatherData = async () => {
         // Getting the input text
         let searchInput = document.querySelector(".search-input").value.trim()
         // Getting the response from the api
-        let response = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${searchInput}&units=metric&appid=222135a57ea9c3923e76a61c0a8a2f2b`)
+        let response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${searchInput}&units=metric&appid=222135a57ea9c3923e76a61c0a8a2f2b`)
         // Converting the response into json
         let data = await response.json()
         // Getting the icon's url
