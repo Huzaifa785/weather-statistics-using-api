@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Hunt!</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/ico" href="https://uxwing.com/wp-content/themes/uxwing/download/27-weather/weather.png"/>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Hey, just enter a city name and get its weather statistics!</h1>
+        <div class="search-area">
+            <input type="text" class="search-input">
+            <button class="search-btn">🔍</button>
+        </div>
+        <div class="card">
+            <div class="content">
+                <h2 class="cityandcountry"></h2>
+                <img class="icon">
+                <p class="weather-type"></p>
+                <p class="description"></p>
+                <p class="temp"></p>
+                <p class="humidity"></p>
+                <p class="invalid"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+
+    <script>
+        VanillaTilt.init(document.querySelector(".card"), {
+            max: 25,
+            speed: 400
+        });
+    </script>
+</body>
+
+</html>
